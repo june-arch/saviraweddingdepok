@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/saviraweddingdepok/static/css/main.deaca99f.chunk.css",
+    "main.js": "/saviraweddingdepok/static/js/main.71e33ee6.chunk.js",
+    "main.js.map": "/saviraweddingdepok/static/js/main.71e33ee6.chunk.js.map",
+    "runtime-main.js": "/saviraweddingdepok/static/js/runtime-main.acb138ce.js",
+    "runtime-main.js.map": "/saviraweddingdepok/static/js/runtime-main.acb138ce.js.map",
+    "static/css/2.5bc09813.chunk.css": "/saviraweddingdepok/static/css/2.5bc09813.chunk.css",
+    "static/js/2.0bc71b5d.chunk.js": "/saviraweddingdepok/static/js/2.0bc71b5d.chunk.js",
+    "static/js/2.0bc71b5d.chunk.js.map": "/saviraweddingdepok/static/js/2.0bc71b5d.chunk.js.map",
+    "index.html": "/saviraweddingdepok/index.html",
+    "precache-manifest.ad1d647f8560bbacaf1d210a095bec0f.js": "/saviraweddingdepok/precache-manifest.ad1d647f8560bbacaf1d210a095bec0f.js",
+    "service-worker.js": "/saviraweddingdepok/service-worker.js",
+    "static/css/2.5bc09813.chunk.css.map": "/saviraweddingdepok/static/css/2.5bc09813.chunk.css.map",
+    "static/css/main.deaca99f.chunk.css.map": "/saviraweddingdepok/static/css/main.deaca99f.chunk.css.map",
+    "static/js/2.0bc71b5d.chunk.js.LICENSE": "/saviraweddingdepok/static/js/2.0bc71b5d.chunk.js.LICENSE",
+    "static/media/1-min.jpeg": "/saviraweddingdepok/static/media/1-min.e6f1299c.jpeg",
+    "static/media/2-min.jpg": "/saviraweddingdepok/static/media/2-min.dae2fd23.jpg",
+    "static/media/3-min.jpeg": "/saviraweddingdepok/static/media/3-min.f72c261a.jpeg",
+    "static/media/4-min.jpg": "/saviraweddingdepok/static/media/4-min.11cedb5e.jpg",
+    "static/media/5-min.jpg": "/saviraweddingdepok/static/media/5-min.41791e27.jpg",
+    "static/media/6-min.jpeg": "/saviraweddingdepok/static/media/6-min.37da17e9.jpeg",
+    "static/media/index.css": "/saviraweddingdepok/static/media/background-body.270cd244.jpeg",
+    "static/media/comment-white-oval-bubble.2b460e5b.svg": "/saviraweddingdepok/static/media/comment-white-oval-bubble.2b460e5b.svg",
+    "static/media/facebook-logo.1d965015.svg": "/saviraweddingdepok/static/media/facebook-logo.1d965015.svg",
+    "static/media/gal1.webp": "/saviraweddingdepok/static/media/gal1.6171a487.webp",
+    "static/media/gal2.webp": "/saviraweddingdepok/static/media/gal2.7e622540.webp",
+    "static/media/instagram-logo.f75e2600.svg": "/saviraweddingdepok/static/media/instagram-logo.f75e2600.svg",
+    "static/media/like.06122dc2.svg": "/saviraweddingdepok/static/media/like.06122dc2.svg",
+    "static/media/logo.png": "/saviraweddingdepok/static/media/logo.0c0b4219.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.acb138ce.js",
+    "static/css/2.5bc09813.chunk.css",
+    "static/js/2.0bc71b5d.chunk.js",
+    "static/css/main.deaca99f.chunk.css",
+    "static/js/main.71e33ee6.chunk.js"
+  ]
+}

@@ -47,6 +47,10 @@
             console.log('User cancelled login or did not fully authorize.');
             }
         });
+
+        FB.api('/113124472034820', function(response) {
+          console.log(response);
+        });
       };
     
       (function(d, s, id){
