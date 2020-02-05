@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/saviraweddingdepok/precache-manifest.dccc1a4a166dc905d2c867b7e4e1bcf9.js"
+  "/saviraweddingdepok/precache-manifest.5a736791e6f2c4bf0f0af11451a963b5.js"
 );
 
 self.addEventListener('message', (event) => {
