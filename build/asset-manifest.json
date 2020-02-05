@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/saviraweddingdepok/static/css/main.deaca99f.chunk.css",
-    "main.js": "/saviraweddingdepok/static/js/main.71e33ee6.chunk.js",
-    "main.js.map": "/saviraweddingdepok/static/js/main.71e33ee6.chunk.js.map",
+    "main.js": "/saviraweddingdepok/static/js/main.ebdc0302.chunk.js",
+    "main.js.map": "/saviraweddingdepok/static/js/main.ebdc0302.chunk.js.map",
     "runtime-main.js": "/saviraweddingdepok/static/js/runtime-main.acb138ce.js",
     "runtime-main.js.map": "/saviraweddingdepok/static/js/runtime-main.acb138ce.js.map",
     "static/css/2.5bc09813.chunk.css": "/saviraweddingdepok/static/css/2.5bc09813.chunk.css",
     "static/js/2.0bc71b5d.chunk.js": "/saviraweddingdepok/static/js/2.0bc71b5d.chunk.js",
     "static/js/2.0bc71b5d.chunk.js.map": "/saviraweddingdepok/static/js/2.0bc71b5d.chunk.js.map",
     "index.html": "/saviraweddingdepok/index.html",
-    "precache-manifest.0a134d22186dd4b0e64d26eff2460a5c.js": "/saviraweddingdepok/precache-manifest.0a134d22186dd4b0e64d26eff2460a5c.js",
+    "precache-manifest.dccc1a4a166dc905d2c867b7e4e1bcf9.js": "/saviraweddingdepok/precache-manifest.dccc1a4a166dc905d2c867b7e4e1bcf9.js",
     "service-worker.js": "/saviraweddingdepok/service-worker.js",
     "static/css/2.5bc09813.chunk.css.map": "/saviraweddingdepok/static/css/2.5bc09813.chunk.css.map",
     "static/css/main.deaca99f.chunk.css.map": "/saviraweddingdepok/static/css/main.deaca99f.chunk.css.map",
@@ -34,6 +34,6 @@
     "static/css/2.5bc09813.chunk.css",
     "static/js/2.0bc71b5d.chunk.js",
     "static/css/main.deaca99f.chunk.css",
-    "static/js/main.71e33ee6.chunk.js"
+    "static/js/main.ebdc0302.chunk.js"
   ]
 }
