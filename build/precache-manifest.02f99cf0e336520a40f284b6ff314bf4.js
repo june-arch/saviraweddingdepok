@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3c914f4c7f527d722654c09245401887",
+    "revision": "b0151a8fa245507912dc8cddac8ded5b",
     "url": "/saviraweddingdepok/index.html"
   },
   {
