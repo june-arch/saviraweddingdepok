@@ -48,8 +48,10 @@
             }
         });
 
-        FB.api('/me', {fields: 'last_name'}, function(response) {
-          console.log(response);
+        FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') {
+            console.log("acces token : ", response.authResponse.accessToken);
+          }
         });
       };
     
