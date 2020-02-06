@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4a23df624e7ae1fd5803d1d1cfe4407a",
+    "revision": "5d34e07460f32fac4485a4ff6ec125b5",
     "url": "/saviraweddingdepok/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saviraweddingdepok/static/css/2.5bc09813.chunk.css"
   },
   {
-    "revision": "bb0d8b5e2870ce5945cc",
+    "revision": "079734c232b2b5c0e374",
     "url": "/saviraweddingdepok/static/css/main.deaca99f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saviraweddingdepok/static/js/2.0bc71b5d.chunk.js.LICENSE"
   },
   {
-    "revision": "bb0d8b5e2870ce5945cc",
-    "url": "/saviraweddingdepok/static/js/main.ebdc0302.chunk.js"
+    "revision": "079734c232b2b5c0e374",
+    "url": "/saviraweddingdepok/static/js/main.b44e8042.chunk.js"
   },
   {
     "revision": "b8a342973e9329568148",

@@ -41,13 +41,19 @@
             if (response.authResponse) {
             console.log('Welcome!  Fetching your information.... ');
             console.log('respons', response)
+            FB.getLoginStatus(function(response) {
+              if (response.status === 'connected') {
+                console.log("token : " + response.authResponse.accessToken)
+                console.log(response)
+              } 
+            } );
             FB.api('/me', function(response) {
               console.log('Good to see you, ' + response.name + '.');
             });
             } else {
             console.log('User cancelled login or did not fully authorize.');
             }
-        },{scope: 'instagram_basic,instagram_manage_comments,instagram_manage_insights'});
+        },{scope: 'instagram_basic,instagram_manage_comments,instagram_manage_insights,pages_show_list'});
       };
     
       
