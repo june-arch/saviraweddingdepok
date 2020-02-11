@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5d34e07460f32fac4485a4ff6ec125b5",
+    "revision": "9b9440e36336de804b6804b007487c52",
     "url": "/saviraweddingdepok/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saviraweddingdepok/static/css/2.5bc09813.chunk.css"
   },
   {
-    "revision": "079734c232b2b5c0e374",
-    "url": "/saviraweddingdepok/static/css/main.deaca99f.chunk.css"
+    "revision": "cba5c1598d6d8a9b0d64",
+    "url": "/saviraweddingdepok/static/css/main.38ef4b5f.chunk.css"
   },
   {
     "revision": "8653138d36fa1ea40ada",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saviraweddingdepok/static/js/2.0bc71b5d.chunk.js.LICENSE"
   },
   {
-    "revision": "079734c232b2b5c0e374",
-    "url": "/saviraweddingdepok/static/js/main.b44e8042.chunk.js"
+    "revision": "cba5c1598d6d8a9b0d64",
+    "url": "/saviraweddingdepok/static/js/main.b0d43d70.chunk.js"
   },
   {
     "revision": "b8a342973e9329568148",
@@ -56,6 +56,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saviraweddingdepok/static/media/background-body.270cd244.jpeg"
   },
   {
+    "revision": "52e753591e47bfff477694360122aaaf",
+    "url": "/saviraweddingdepok/static/media/close.52e75359.svg"
+  },
+  {
+    "revision": "7bab216994f83293161e4f910f848c6a",
+    "url": "/saviraweddingdepok/static/media/comment-grey.7bab2169.svg"
+  },
+  {
     "revision": "2b460e5bf54504b33b5e421c15831a68",
     "url": "/saviraweddingdepok/static/media/comment-white-oval-bubble.2b460e5b.svg"
   },
@@ -68,12 +76,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/saviraweddingdepok/static/media/gal1.6171a487.webp"
   },
   {
-    "revision": "7e622540e890aaaf9612affac955d583",
-    "url": "/saviraweddingdepok/static/media/gal2.7e622540.webp"
+    "revision": "9c6c60dbbe60da4c224779080e59bb62",
+    "url": "/saviraweddingdepok/static/media/instagram-grey.9c6c60db.svg"
   },
   {
     "revision": "f75e2600e08199c82c07e91e8200bb8b",
     "url": "/saviraweddingdepok/static/media/instagram-logo.f75e2600.svg"
+  },
+  {
+    "revision": "f5c5940d9d255395ed4f316dc3f4a6a7",
+    "url": "/saviraweddingdepok/static/media/like-grey.f5c5940d.svg"
   },
   {
     "revision": "06122dc29220cb896f2ee47b5f285103",
@@ -82,5 +94,17 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0c0b4219b1e87c70e7cc822b1422a5a5",
     "url": "/saviraweddingdepok/static/media/logo.0c0b4219.png"
+  },
+  {
+    "revision": "03928acd573c99782972aaaa132d238c",
+    "url": "/saviraweddingdepok/static/media/makeup_artist.03928acd.webp"
+  },
+  {
+    "revision": "a0bdf1cd0647d7bde4605faf86b54e85",
+    "url": "/saviraweddingdepok/static/media/paper.a0bdf1cd.svg"
+  },
+  {
+    "revision": "693d809f0d9f66c406305bd3c11cf32e",
+    "url": "/saviraweddingdepok/static/media/video.693d809f.svg"
   }
 ]);
