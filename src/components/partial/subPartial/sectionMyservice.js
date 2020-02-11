@@ -1,6 +1,6 @@
 import React from "react";
 import gal1 from "../../../assets/gal1.webp";
-import gal2 from "../../../assets/gal2.webp";
+import gal2 from "../../../assets/makeup_artist.webp";
 import "animate.css/animate.min.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -20,9 +20,9 @@ const SectionMyservice = () => {
               className="text-center text-white w-75 mx-auto mb-5 pb-4"
             >
               <p>
-                I've been working as a qualified wedding planner since 2000,
-                forming a network with some of the best event vendors in San
-                Francisco. No matter what ideas you have, I'm here to help
+                I've been working as a qualified wedding planner since 2013,
+                forming a network with some of the best event vendors in Depok.
+                No matter what ideas you have, I'm here to help
                 make your dream event a reality. Contact me to schedule a free
                 consultation and learn what I can do for you.
               </p>
@@ -42,12 +42,15 @@ const SectionMyservice = () => {
                     <h5 className="card-title text-title">
                       Wedding Venue Setup
                     </h5>
+                    <h5 className="card-title text-title-2">
+                      Lively and Fun
+                    </h5>
                     <p className="card-text">
                       Whatever the circumstances, I am here to make your event
                       extra special. This service will help create a wonderful
                       and unique experience for your guests. I offer
                       competitive rates and work with the best vendors and
-                      venues in the San Francisco area, guaranteeing an
+                      venues in the Depok City area, guaranteeing an
                       unforgettable event.
                     </p>
                   </div>
@@ -65,6 +68,9 @@ const SectionMyservice = () => {
                   <div className="card-body text-center">
                     <h5 className="card-title text-title">
                       FLoral Arangment Coordiantion
+                    </h5>
+                    <h5 className="card-title text-title-2">
+                      Perfectly Planned
                     </h5>
                     <p className="card-text">
                       I care about making your event the best possible

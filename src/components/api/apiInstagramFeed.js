@@ -8,16 +8,19 @@ import ItemInstaFourthStyle from "./ItemInstaFourthStyle"
 const ApiInstagramFeed = () => {
   const [instaFeed, setInstaFeed] = useState([])
   const [anak, setAnak] = useState([])
-  const [limit, setLimit] = useState(9)
   const [start, setStart] = useState(9)
   const [count, setCount] = useState(1)
+  const [profile, setProfile] = useState({})
   const [nextPoint, setNextPoint] = useState('')
 
   const hook = () => {
-    instaService.getAllMedia().then(res => {
-      setInstaFeed(res.data)
-      setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={res.data} start={0}/>}))
-      setNextPoint(res.paging.next)
+    instaService.getProfile().then(respon => {
+      setProfile(respon)
+      instaService.getAllMedia().then(res => {
+        setInstaFeed(res.data)
+        setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={res.data} profile={respon} start={0}/>}))
+        setNextPoint(res.paging.next)
+      })
     })
     
   }
@@ -27,16 +30,16 @@ const ApiInstagramFeed = () => {
   const handelShowMore = (event) => {
     event.preventDefault()
     if(count === 0){
-      setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={instaFeed.slice(start, start+9)} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
       setCount(1)
     }else if(count === 1){
-      setAnak(anak.concat({isi : <ItemInstaSecondStyle instaFeed={instaFeed.slice(start, start+9)} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaSecondStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
       setCount(2)
     }else if(count === 2){
-      setAnak(anak.concat({isi : <ItemInstaThirdStyle instaFeed={instaFeed.slice(start, start+9)} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaThirdStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
       setCount(3)
     }else if (count === 3){
-      setAnak(anak.concat({isi : <ItemInstaFourthStyle instaFeed={instaFeed.slice(start, start+9)} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaFourthStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
       setCount(0)
     }
     let a = instaFeed.length % 9
@@ -60,7 +63,6 @@ const ApiInstagramFeed = () => {
           <button className="btn btn-outline-primary btn-sm mt-2" onClick={handelShowMore}>
             Show More
           </button>
-          {"cek nilai",console.log(instaFeed.slice(0, 30).length)}
         </div>
         )
     }else{

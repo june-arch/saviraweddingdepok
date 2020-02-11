@@ -15,8 +15,8 @@ const Footer = () => {
               <ScrollAnimation animateIn="fadeIn" animateOnce={true}>Contact Us</ScrollAnimation>
             </div>
           </div>
-          <div className="row justify-content-center mt-3 pt-3">
-            <div className="col-md-6 resize mt-2">
+          <div className="row mt-3 pt-3">
+            <div className="col-md-6 resize mt-2 center-map text-center">
               <ScrollAnimation animateIn="fadeInLeft" delay={500} animateOnce={true}>
                 <div className="card mx-auto d-block">
                   <iframe
@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
               </ScrollAnimation>
             </div>
-            <div className="col-md-6 resize mt-2">
+            <div className="col-md-6 resize mt-2 center-map text-center">
               <ScrollAnimation animateIn="fadeInRight" delay={500} animateOnce={true}>
                 <div className="card mx-auto d-block">
                   <iframe

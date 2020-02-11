@@ -28,44 +28,6 @@
     <title>Savira Wedding Depok</title>
   </head>
   <body>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId            : '2554741168091116',
-          autoLogAppEvents : true,
-          xfbml            : true,
-          version          : 'v6.0'           // Use this Graph API version for this call.
-        });
-    
-        FB.login(function(response) {
-            if (response.authResponse) {
-            console.log('Welcome!  Fetching your information.... ');
-            console.log('respons', response)
-            FB.getLoginStatus(function(response) {
-              if (response.status === 'connected') {
-                console.log("token : " + response.authResponse.accessToken)
-                console.log(response)
-              } 
-            } );
-            FB.api('/me', function(response) {
-              console.log('Good to see you, ' + response.name + '.');
-            });
-            } else {
-            console.log('User cancelled login or did not fully authorize.');
-            }
-        },{scope: 'instagram_basic,instagram_manage_comments,instagram_manage_insights,pages_show_list'});
-      };
-    
-      
-      (function(d, s, id) {                      // Load the SDK asynchronously
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    
-    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--

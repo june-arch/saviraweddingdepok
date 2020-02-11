@@ -13,7 +13,7 @@ const SectionIntro = () => {
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
-            <div id="text-1" className="text-center text-white pb-3">
+            <div id="text-1" className="text-center text-white pb-3 text-title-2">
               Because in your dreams, every detail matters.
             </div>
             <div id="text-2" className="text-center text-white w-75 mx-auto">
