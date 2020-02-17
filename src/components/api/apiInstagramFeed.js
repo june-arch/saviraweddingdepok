@@ -18,7 +18,7 @@ const ApiInstagramFeed = () => {
       setProfile(respon)
       instaService.getAllMedia().then(res => {
         setInstaFeed(res.data)
-        setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={res.data} profile={respon} start={0}/>}))
+        setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={res.data} profile={respon} instaModal={res.data} start={0}/>}))
         setNextPoint(res.paging.next)
       })
     })
@@ -30,16 +30,16 @@ const ApiInstagramFeed = () => {
   const handelShowMore = (event) => {
     event.preventDefault()
     if(count === 0){
-      setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
       setCount(1)
     }else if(count === 1){
-      setAnak(anak.concat({isi : <ItemInstaSecondStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaSecondStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
       setCount(2)
     }else if(count === 2){
-      setAnak(anak.concat({isi : <ItemInstaThirdStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaThirdStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
       setCount(3)
     }else if (count === 3){
-      setAnak(anak.concat({isi : <ItemInstaFourthStyle instaFeed={instaFeed.slice(start, start+9)} profile={profile} start={0}/>}))
+      setAnak(anak.concat({isi : <ItemInstaFourthStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
       setCount(0)
     }
     let a = instaFeed.length % 9

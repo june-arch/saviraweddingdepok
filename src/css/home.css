@@ -232,6 +232,14 @@
   background-color: white;
   width: 50rem;
 }
+.container-dialog{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+  width: 60rem;
+}
 .pl-0{
   padding-left: 0px;
 }
@@ -249,11 +257,30 @@
   border-radius: 0.25rem;
 }
 
+.arrow-right-button {
+  float: right;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  text-align: center;
+  direction: rtl;
+}
+.arrow-left-button {
+  float: left;
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  text-align: center;
+  direction: ltr;
+}
+
 .show-dialog{
   opacity: 1;
   visibility: visible;
   transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.75s 0s, transform 0.75s;
   z-index: 1;
 }
 

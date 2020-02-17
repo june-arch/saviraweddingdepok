@@ -9,6 +9,7 @@ const token = 'EAAkThgfRLZBwBAIHsbzGcGch08ZAE5w6r7i9mJHFZANXQBM6U5DKFY2QC5BLiefk
 const getAllMedia = () => {
     const fields = 'fields=id,media_type,media_url,username,timestamp,thumbnail_url,caption,like_count,comments_count,permalink'
     const request = axios.get(`${baseUrl}/${idIgPage}/media?${fields}&access_token=${token}`)
+    request.then(res => res.data)
     return request.then(res => res.data)
 }
 

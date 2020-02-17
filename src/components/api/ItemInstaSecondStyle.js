@@ -4,25 +4,27 @@ import Sebaris from "../partial/subInsta/Sebaris"
 import SecondRowOne from "../partial/subInsta/SecondRowOne"
 import SecondRowTwo from "../partial/subInsta/SecondRowTwo"
 
-// ReactModal.setAppElement("#root");
-
-const ItemInstaFirstStyle = ({instaFeed, profile}) => {
-
+const ItemInstaFirstStyle = ({instaFeed, profile, instaModal, start}) => {
+  let first = instaFeed.slice(0,1)
+  let second = instaFeed.slice(1,3)
+  let third = instaFeed.slice(3,5)
+  let fourth = instaFeed.slice(5,9)
+  
   return (
     <div>
       <div className="row">
-        {instaFeed.length > 0 ? instaFeed.slice(0, 1).map((val, key) => <SecondRowOne val={val} profile={profile} key={key} />) : ''}
+        {instaFeed.length > 0 ? first.map((val, key) => <SecondRowOne val={val} idNext={instaFeed[key+1]} idBefore={instaFeed[key-1]} profile={profile} key={key} />) : ''}
         <div className="col-md-6 row-kanan">
           <div className="row">
-            {instaFeed.length > 0 ? instaFeed.slice(1, 3).map((val, key) =><SecondRowTwo val={val} profile={profile} delay={500} key={key} />) : ''}
+            {instaFeed.length > 0 ? second.map((val, key) =><SecondRowTwo val={val} idNext={instaFeed[key+1+1]} idBefore={instaFeed[key-1+1]} profile={profile} delay={500} key={key} />) : ''}
           </div>
           <div className="row">
-            {instaFeed.length > 0 ? instaFeed.slice(3, 5).map((val, key) => <SecondRowTwo val={val} profile={profile} delay={600} key={key} />) : null}
+            {instaFeed.length > 0 ? third.map((val, key) => <SecondRowTwo val={val} idNext={instaFeed[key+1+3]} idBefore={instaFeed[key-1+3]} profile={profile} delay={600} key={key} />) : null}
           </div>
         </div>
       </div>
       <div className="row">
-        {instaFeed.length > 0 ? instaFeed.slice(5, 9).map((val, key) => <Sebaris val={val} profile={profile} key={key}/> ) : '' }
+        {instaFeed.length > 0 ? fourth.map((val, key) => <Sebaris val={val} idNext={instaFeed[key+1+5]} idBefore={instaFeed[key-1+5]} profile={profile} key={key}/> ) : '' }
       </div>
     </div>
   
