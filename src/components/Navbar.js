@@ -1,9 +1,9 @@
 import React from "react";
 import $ from "jquery";
-import logo from "../../assets/logo.png";
-import "../../css/navbar.css";
-import { ReactComponent as Fb } from "../../assets/facebook-logo.svg";
-import { ReactComponent as Ig } from "../../assets/instagram-logo.svg";
+import logo from "../assets/logo.png";
+import "../css/navbar.css";
+import { ReactComponent as Fb } from "../assets/facebook-logo.svg";
+import { ReactComponent as Ig } from "../assets/instagram-logo.svg";
 
 const Navbar = () => {
   $(document).ready(function() {

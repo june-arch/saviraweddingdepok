@@ -1,8 +1,8 @@
 import React from "react";
-import "../../css/footer.css";
-import { ReactComponent as Fb } from "../../assets/facebook-logo.svg";
-import { ReactComponent as Ig } from "../../assets/instagram-logo.svg";
-import "animate.css/animate.min.css";
+import "../css/footer.css";
+import { ReactComponent as Fb } from "../assets/facebook-logo.svg";
+import { ReactComponent as Ig } from "../assets/instagram-logo.svg";
+import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const Footer = () => {

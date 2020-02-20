@@ -1,11 +1,11 @@
 import React from "react";
-import pict1 from "../../../assets/1-min.jpeg";
-import pict2 from "../../../assets/2-min.jpg";
-import pict3 from "../../../assets/3-min.jpeg";
-import pict4 from "../../../assets/4-min.jpg";
-import pict5 from "../../../assets/5-min.jpg";
-import pict6 from "../../../assets/6-min.jpeg";
-import "animate.css/animate.min.css";
+import pict1 from "../../assets/1-min.jpeg";
+import pict2 from "../../assets/2-min.jpg";
+import pict3 from "../../assets/3-min.jpeg";
+import pict4 from "../../assets/4-min.jpg";
+import pict5 from "../../assets/5-min.jpg";
+import pict6 from "../../assets/6-min.jpeg";
+import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const SectionGallery = () => {

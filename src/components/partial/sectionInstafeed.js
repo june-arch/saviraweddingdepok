@@ -1,6 +1,6 @@
 import React from "react";
-import ApiInstagramFeed from "../../api/apiInstagramFeed";
-import "animate.css/animate.min.css";
+import ApiInstagramFeed from "../api/apiInstagramFeed";
+import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const SectionInstafeed = () => {

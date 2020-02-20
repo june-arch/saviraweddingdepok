@@ -1,8 +1,8 @@
 import React from "react"
 import "animate.css/animate.min.css"
-import Sebaris from "../partial/subInsta/Sebaris"
-import SecondRowOne from "../partial/subInsta/SecondRowOne"
-import SecondRowTwo from "../partial/subInsta/SecondRowTwo"
+import Sebaris from "./Sebaris"
+import SecondRowOne from "./SecondRowOne"
+import SecondRowTwo from "./SecondRowTwo"
 
 const ItemInstaThirdtStyle = ({instaFeed,instaModal, profile, start}) => {
   let first = instaFeed.slice(0,4)

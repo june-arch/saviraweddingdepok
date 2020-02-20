@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react"
-import ItemInstaFirstStyle from "./ItemInstaFirstStyle"
-import ItemInstaSecondStyle from "./ItemInstaSecondStyle"
+import ItemInstaFirstStyle from "./subInsta/ItemInstaFirstStyle"
 import instaService from '../../services/instaService'
-import ItemInstaThirdStyle from "./ItemInstaThirdStyle"
-import ItemInstaFourthStyle from "./ItemInstaFourthStyle"
+import FunctionUtils from "../../utils/FunctionUtils"
 
 const ApiInstagramFeed = () => {
   const [instaFeed, setInstaFeed] = useState([])
@@ -22,45 +20,16 @@ const ApiInstagramFeed = () => {
         setNextPoint(res.paging.next)
       })
     })
-    
   }
 
   useEffect(hook,[])
-
-  const handelShowMore = (event) => {
-    event.preventDefault()
-    if(count === 0){
-      setAnak(anak.concat({isi : <ItemInstaFirstStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
-      setCount(1)
-    }else if(count === 1){
-      setAnak(anak.concat({isi : <ItemInstaSecondStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
-      setCount(2)
-    }else if(count === 2){
-      setAnak(anak.concat({isi : <ItemInstaThirdStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
-      setCount(3)
-    }else if (count === 3){
-      setAnak(anak.concat({isi : <ItemInstaFourthStyle instaFeed={instaFeed.slice(start, start+9)} instaModal={instaFeed} profile={profile} start={start+9}/>}))
-      setCount(0)
-    }
-    let a = instaFeed.length % 9
-    let b = instaFeed.length - (start + 9)
-    if(a === b){
-      instaService
-        .getNextPage(nextPoint)
-        .then(res => {
-          setInstaFeed(instaFeed.concat(res.data))
-          setNextPoint(res.paging.next)
-        })
-    }
-    setStart(start+9)
-  }
 
   const showInstaFeed = () => {
     if(instaFeed.length > 0){
       return (
         <div className="mx-auto d-block text-center">
           {anak.map((res, key) => <div key={key}>{res.isi}</div>)}
-          <button className="btn btn-outline-primary btn-sm mt-2" onClick={handelShowMore}>
+          <button className="btn btn-outline-primary btn-sm mt-2" onClick={(e) => FunctionUtils.handleShowMore(e,start,setStart, count, setCount, profile, nextPoint, setNextPoint, anak, setAnak, instaFeed, setInstaFeed)}>
             Show More
           </button>
         </div>
@@ -69,7 +38,7 @@ const ApiInstagramFeed = () => {
       return <div></div>
     }
   }
-
+  
   return (
     <div>
       <div className="row">

@@ -1,8 +1,8 @@
-import React from "react";
-import Home from "./components/partial/home";
-import Navbar from "./components/partial/navbar";
-import Footer from "./components/partial/footer";
-import ScrollUpButton from "react-scroll-up-button";
+import React from "react"
+import ScrollUpButton from "react-scroll-up-button"
+import Home from "./Home"
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 const App = () => {
 

@@ -1,7 +1,7 @@
 import React from "react";
-import gal1 from "../../../assets/gal1.webp";
-import gal2 from "../../../assets/makeup_artist.webp";
-import "animate.css/animate.min.css";
+import gal1 from "../../assets/gal1.webp";
+import gal2 from "../../assets/makeup_artist.webp";
+import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
 const SectionMyservice = () => {
