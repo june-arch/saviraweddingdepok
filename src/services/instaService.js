@@ -29,4 +29,12 @@ const getProfile = () =>{
                 .catch(err => console.log(err))
 }
 
-export default {getAllMedia, getNextPage, getProfile}
+const getOneMedia = (id) => {
+    const fields = 'fields=id,media_type,media_url,like_count,comments_count,owner,timestamp,caption'
+    const request = axios.get(`${baseUrl}/${id}?${fields}&access_token=${token}`)
+    return request
+                .then(res => res.data)
+                .catch(err => console.log(err))
+}
+
+export default {getAllMedia, getNextPage, getProfile, getOneMedia}

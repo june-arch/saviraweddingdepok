@@ -4,19 +4,13 @@ import { ReactComponent as Comment } from "../../../assets/comment.svg";
 import ScrollAnimation from "react-animate-on-scroll";
 import FunUtils from "../../../utils/FunctionUtils"
 
-const Sebaris = ({val, idNext, idBefore, profile}) => {
+const Sebaris = ({val, showDialogHandle}) => {
 
-    const showDialogHandle = (event) => {
-      event.preventDefault()
-      let modal = document.getElementById(val.id)
-      modal.classList.toggle("show-dialog")
-    }
-    
     let cap = val.caption.split('#')
     return(
         <div className="col-md-3 row-atas ">
             <ScrollAnimation animateIn="fadeIn" delay={300} animateOnce={true}>
-              <div className="card" key={val.id} onClick={showDialogHandle}>
+              <div className="card" key={val.id} onClick={(e) => showDialogHandle(e, val.id)}>
                 <span className="badge">{FunUtils.showBadgeInsta(val)}</span>
                 {FunUtils.showImageInsta(val)} 
                 <div className="card-img-overlay d-flex flex-column">
@@ -38,7 +32,7 @@ const Sebaris = ({val, idNext, idBefore, profile}) => {
                 </div>
               </div>
             </ScrollAnimation>
-            {FunUtils.showModals(val, idNext, idBefore, profile)}
+            {/* {FunUtils.showModals(val, idNext, idBefore, profile)} */}
         </div> 
     )
 }
