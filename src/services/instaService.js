@@ -7,7 +7,7 @@ const idIgPage = '17841400557997710'
 const token = 'EAAkThgfRLZBwBAIHsbzGcGch08ZAE5w6r7i9mJHFZANXQBM6U5DKFY2QC5BLiefkX5SQoVxwE0hWqXpGbmVrCqi1mECX8pZAptbEQnBnZA7WsWKsQuXKh0mHJk9ZC40uBLbg4bvsab5HgVV9JGLqLsB4odclc7sRes1MfvWvyEIQZDZD'
 
 const getAllMedia = () => {
-    const fields = 'fields=id,media_type,media_url,username,timestamp,thumbnail_url,caption,like_count,comments_count,permalink'
+    const fields = 'fields=id,media_type,media_url,username,timestamp,thumbnail_url,caption,like_count,comments_count,permalink,children'
     const request = axios.get(`${baseUrl}/${idIgPage}/media?${fields}&access_token=${token}`)
     return request
                 .then(res => res.data)
@@ -30,11 +30,19 @@ const getProfile = () =>{
 }
 
 const getOneMedia = (id) => {
-    const fields = 'fields=id,media_type,media_url,like_count,comments_count,owner,timestamp,caption'
+    const fields = 'fields=id,media_type,media_url,like_count,comments_count,owner,timestamp,caption,thumbnail_url'
     const request = axios.get(`${baseUrl}/${id}?${fields}&access_token=${token}`)
     return request
                 .then(res => res.data)
                 .catch(err => console.log(err))
 }
 
-export default {getAllMedia, getNextPage, getProfile, getOneMedia}
+const getOneMediaChildren = (id) => {
+    const fields = 'fields=id,media_type,media_url'
+    const request = axios.get(`${baseUrl}/${id}?${fields}&access_token=${token}`)
+    return request
+                .then(res => res.data)
+                .catch(err => console.log(err))
+}
+
+export default {getAllMedia, getNextPage, getProfile, getOneMedia, getOneMediaChildren}

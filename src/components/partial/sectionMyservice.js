@@ -17,7 +17,7 @@ const SectionMyservice = () => {
           <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <div
               id="text-2"
-              className="text-center text-white w-75 mx-auto mb-5 pb-4"
+              className="text-center text-white mx-auto mb-5 pb-4"
             >
               <p>
                 I've been working as a qualified wedding planner since 2013,

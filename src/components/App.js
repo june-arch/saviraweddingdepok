@@ -1,21 +1,15 @@
 import React from "react"
-import ScrollUpButton from "react-scroll-up-button"
-import Home from "./Home"
-import Navbar from "./Navbar"
 import Footer from "./Footer"
+import Home from "./Home"
+import Nav from './Nav'
 
 const App = () => {
 
   return (
-    <div>
-      <Navbar />
+    <div className="app">
+      <Nav/>
       <Home />
-      <Footer />
-      <ScrollUpButton
-        ContainerClassName="AnyClassForContainer"
-        TransitionClassName="AnyClassForTransition"
-        style={{ zIndex: 1 }}
-      />
+      <Footer/>
     </div>
   )
 }

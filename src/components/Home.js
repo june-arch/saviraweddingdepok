@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/home.css";
 import SectionWelcome from "./partial/sectionWelcome";
 import SectionIntro from "./partial/sectionIntro";
 import SectionMyservice from "./partial/sectionMyservice";

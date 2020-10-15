@@ -1,5 +1,4 @@
 import React from "react";
-import ApiInstagramFeed from "../api/apiInstagramFeed";
 import "animate.css";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -13,7 +12,8 @@ const SectionInstafeed = () => {
               Instagram Feed
             </div>
           </ScrollAnimation>
-          <ApiInstagramFeed />
+          {/* <ApiInstagramFeed /> */}
+          <h1> Here is Instagram Yooo!! </h1>
         </div>
       </div>
     </section>

@@ -6,7 +6,7 @@ const SectionIntro = () => {
   return (
     <section className="intro">
       <div className="jumbotron">
-        <div className="container-fluid">
+        <div className="container">
           <ScrollAnimation animateIn="fadeIn" animateOnce={true}>
             <div id="title" className="text-center text-title pb-3">
               Saviraweddingdepok
